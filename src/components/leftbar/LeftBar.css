@@ -1,0 +1,76 @@
+.leftBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1.5px solid var(--black-3);
+  height: 100vh;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+
+  border-left: none;
+}
+
+/* LeftBar Top */
+.A_logo {
+  padding: 3px;
+  /* border: 1.5px solid #494949; */
+  /* margin: 7px; */
+  margin-top: 12px;
+  /* background-color: #1b1b1b; */
+  cursor: pointer;
+  text-align: center;
+  border-radius: 2px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  transition: all 1s ease-out;
+}
+
+/* Left Bar Middle */
+.leftBarMiddle p {
+  transform: rotate(270deg);
+  /* color: #8a8a8a; */
+  /* color: var(--black-5); */
+  color: gold;
+  width: max-content;
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  word-spacing: 3px;
+  opacity: 0.8;
+  margin-top: 80px;
+}
+
+/* Left Bar Bottom */
+.leftBarBottom {
+  margin-bottom: 10px;
+}
+
+.leftBarBottom .socialIcons {
+  font-size: 25px;
+  color: var(--white-4);
+  text-align: center;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.leftBarBottom .socialIcons a {
+  color: var(--white-4);
+}
+
+.socialIcons:hover {
+  transform: scale(1.05);
+}
+.socialIcons a:hover {
+  color: gold;
+}
+
+@media only screen and (max-width: 600px) {
+  .leftBar {
+    display: none;
+  }
+}

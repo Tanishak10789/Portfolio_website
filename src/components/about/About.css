@@ -1,0 +1,21 @@
+.aboutSection {
+    margin: 10px;
+    border: 1px solid var(--black-3);
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.leftAbout img {
+    
+    width: 800px;
+}
+
+.rightAbout {
+    font-family: "Jersey 25", sans-serif;
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.3rem;
+    color: var(--white-4);
+
+}

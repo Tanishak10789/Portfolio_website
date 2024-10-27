@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=Jersey+25+Charted&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=Jersey+25+Charted&family=Micro+5&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=Jersey+25&family=Jersey+25+Charted&family=Micro+5&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Jersey+15&family=Jersey+25&family=Jersey+25+Charted&family=Micro+5&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Jersey+15&family=Jersey+25&family=Jersey+25+Charted&family=Micro+5&family=Nabla&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+body {
+  /* background: url(./images/darkness.jpg); */
+  background-color: #000000;
+  color: white;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  /* font-family: "Jersey 25 Charted", sans-serif; */
+  /* font-family: "Jersey 15", sans-serif; */
+  /* font-family: "Micro 5", sans-serif; */
+  /* font-family: "Jersey 25", sans-serif; */
+  /* font-family: "Foldit", sans-serif; */
+  /* font-family: "Nabla", system-ui; */
+}
+
+:root {
+  --black-1: #000000; /* Darkest */
+  --black-2: #1e1e1e;
+  --black-3: #404040;
+  --black-4: #6c6c6c;
+  --black-5: #818181; /* Lightest */
+
+  --white-1: #ffffff; /* Lightest */
+  --white-2: #ececec;
+  --white-3: #dddddd;
+  --white-4: #bcbcbc;
+  --white-5: #acacac; /* Darkest */
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--dark1);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--black-1);
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: var(--white-5); */
+  background-color: gold;
+  border: 2px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}
+
+::selection {
+  color: var(--black-3);
+  background: var(--white-1);
+}
+
+.container {
+  margin: 0 10px 0 70px;
+  border: 1px solid var(--black-3);
+  border-top: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 10px;
+  }
+}

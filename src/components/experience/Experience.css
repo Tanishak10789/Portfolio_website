@@ -1,0 +1,132 @@
+.experienceSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--black-3);
+  padding: 30px 0;
+}
+.expHead {
+  margin: 20px;
+  font-size: 3rem;
+  font-family: "Jersey 25 Charted", sans-serif;
+}
+
+.experienceContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 10px;
+  column-gap: 20px;
+  cursor: default;
+  
+  overflow: ellipsis;
+}
+
+.expCard {
+  padding: 40px 20px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  /* background-color: var(--black-5); */
+}
+
+.growthIcon {
+  font-size: 1.5rem;
+  color: #59adf7;
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+.expHeading {
+  font-size: 1.5rem;
+  margin: 0;
+  font-family: "Nabla", system-ui;
+}
+
+.expSubHeading {
+  margin: 0;
+  font-family: "Jersey 15", sans-serif;
+  font-size: 1.3rem;
+  color: var(--white-3);
+}
+
+.expTime {
+  margin: 5px 0;
+  font-weight: 200;
+  font-size: 0.7rem;
+  padding: 3px 6px;
+  background-color: var(--black-2);
+  border: 0.5px solid var(--black-3);
+  border-radius: 3px;
+  width: fit-content;
+  transition: all 0.5s ease-in-out;
+}
+.expTime:hover {
+  color: gold;
+}
+
+.expDescription {
+  color: var(--white-4);
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  margin: 8px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .experienceContainer {
+    column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .expCard {
+    padding: 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .experienceContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .expCard {
+    padding: 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .expHead {
+    font-size: 2.5rem;
+  }
+
+  .experienceContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .expCard {
+    padding: 20px 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .experienceContainer {
+    grid-template-columns: 1fr;
+  }
+  .expCard {
+    padding: 10px;
+    border-bottom: 1px solid var(--black-3);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .expHead {
+    font-size: 2rem;
+  }
+  .expHeading {
+    font-size: 1.3rem;
+  }
+
+  .expSubHeading {
+    font-size: 1.1rem;
+  }
+
+  .expDescription {
+    font-size: 0.9rem;
+  }
+}

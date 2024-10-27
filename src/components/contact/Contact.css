@@ -1,0 +1,156 @@
+.contact_section {
+    padding: 20px 30px;
+    display: flex;
+    height: 400px;
+}
+
+.contact_section_left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_section_right {
+    width: 50%;
+    position: relative;
+}
+
+.contact_image img {
+    width: 20vw;
+}
+
+.contact_logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact_icons a{
+    color: white;
+    font-size: 2rem;
+}
+
+.contact_icons a:hover {
+    color: gold;
+}
+
+.thnxmsg {
+    
+    width: 200px;
+    padding: 20px;
+    border: 3px solid white;
+
+    position: absolute;
+
+    transition: .2s all ease-in-out;
+}
+
+.thnxmsg span {
+    color: gold;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.thnxmsg:hover {
+    /* color: gold; */
+    border: 3px solid gold;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    width: 200px;
+    padding: 20px;
+    border: 3px solid white;
+    background-color: black;
+
+    position: absolute;
+    top: 120px;
+    left: 180px;
+
+    transition: .2s all ease-in-out;
+}
+
+.contact_form:hover {
+    border: 3px solid gold;
+}
+
+.contact_form input {
+    all: unset;
+    color: white;
+    padding: 5px;
+    border-bottom: 2px solid white;
+}
+
+.contact_form textarea {
+    color: white;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.contact_form textarea:focus {
+    outline: none;
+}
+
+.smbtBTN {
+    all: unset;
+    width: max-content;
+    align-self: flex-end;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.smbtBTN:hover {
+    color: gold;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact_section {
+        padding: 20px 10px;
+    }
+    .contact_section_right {
+        /* transform: scale(.8); */
+        zoom: .8;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .contact_section {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+    }
+    .contact_section_left {
+        width: 100%;
+    }
+    
+    .contact_image img {
+        width: 40vw;
+    }
+    
+    .contact_section_right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: initial;
+        zoom: initial;
+    }
+                          
+    .thnxmsg {
+        position: initial;
+    }
+
+    .contact_form {
+        position: initial;
+    }
+                          
+}

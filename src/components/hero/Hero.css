@@ -1,0 +1,187 @@
+.heroSection {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--black-3);
+  height: 100vh;
+}
+
+.heroLeft {
+  margin-left: 100px;
+}
+
+.h_1 {
+  font-family: "Jersey 25 Charted", sans-serif;
+  font-size: 3rem;
+}
+
+.h_2 {
+  margin-top: 10px;
+  font-family: "Jersey 15", sans-serif;
+  font-size: 9rem;
+  line-height: 0.8;
+  letter-spacing: 10px;
+}
+
+.h_3 {
+  /* font-family: "Nabla", system-ui; */
+  color: var(--white-4);
+  margin-top: 30px;
+  padding-left: 40px;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  border-left: 2px solid gold;
+  width: 250px;
+}
+
+.heroRight img {
+  width: 45vw;
+  
+}
+
+@media only screen and (max-width: 1300px) {
+  .heroLeft {
+    margin-left: 80px;
+  }
+
+  .h_1 {
+    font-size: 2.5rem;
+  }
+
+  .h_2 {
+    font-size: 7rem;
+    width: min-content;
+  }
+
+  .h_3 {
+    font-size: 1rem;
+  }
+
+  /* .heroRight img {
+    width: 500px;
+  } */
+}
+
+@media only screen and (max-width: 1000px) {
+  .h_1 {
+    font-size: 2.2rem;
+  }
+
+  .h_2 {
+    font-size: 5rem;
+    width: min-content;
+  }
+
+  .h_3 {
+    font-size: 0.9rem;
+  }
+
+  /* .heroRight img {
+    width: 400px;
+  } */
+}
+
+@media only screen and (max-width: 900px) {
+  .heroLeft {
+    margin-left: 50px;
+  }
+
+  .heroRight img {
+    width: 45vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .heroSection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .heroLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .h_2 {
+    font-size: 5rem;
+    width: 50vw;
+  }
+
+  .h_3 {
+    width: 50vw;
+    padding-left: 0;
+    border-top: 2px solid gold;
+    border-left: none;
+    padding-top: 20px;
+  }
+
+  .heroRight img {
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heroSection {
+    gap: 30px;
+    height: 95vh;
+    
+    margin-top: 50px;
+  }
+  
+  .heroLeft{
+    gap: 20px;
+  }
+
+  .h_1 {
+    font-size: 1.8rem;
+  }
+
+  .h_2 {
+    font-size: 4rem;
+  }
+
+  .h_3 {
+    width: 50vw;
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 0.7rem;
+  }
+
+  .heroRight img {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .heroRight img {
+    width: 80vw;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .h_1 {
+    font-size: 1.6rem;
+  }
+
+  .h_2 {
+    font-size: 3.5rem;
+  }
+
+  .h_3 {
+    width: 50vw;
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 0.7rem;
+  }
+/* 
+  .heroRight img {
+    width: 75vw;
+  } */
+}
