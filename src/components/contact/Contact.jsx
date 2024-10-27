@@ -1,5 +1,5 @@
 
-import portfolio from '/images/portfolioimage1.jpeg';
+import portfolio from '/images/tanishakimage.jpeg';
 
 // import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
